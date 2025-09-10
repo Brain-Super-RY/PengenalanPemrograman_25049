@@ -15,4 +15,6 @@ Struktur folder disusun berdasarkan urutan praktikum agar memudahkan navigasi da
 
 ---
 
-📌 Repository ini dibuat untuk kepentingan akademik dan dokumentasi pembelajaran.
+📌 Repository ini dibuat untuk kepentingan akademik dan dokumentasi pembelajaran.  
+
+👤 **Pemilik Repository:** Rizky Yoga Salasa
