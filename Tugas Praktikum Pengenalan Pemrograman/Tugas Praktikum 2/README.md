@@ -1,13 +1,12 @@
 # 🏪 Program Warung Digi (C++)
 
-Ini adalah program C++ sederhana yang berfungsi untuk menampilkan daftar barang warung beserta detail lengkapnya (kode, nama, jumlah stok, harga, dan tanggal kadaluarsa). Program ini dibuat sebagai latihan dasar untuk memahami konsep **array, input, output, perulangan, dan validasi input** dalam C++.
+Program Warung Digi ini dibuat menggunakan C++ untuk menampilkan data awal barang (`namaBarang`, `jumlah`, `harga`) dalam bentuk tabel serta menyediakan menu interaktif agar pengguna dapat melihat detail barang tertentu. Program ini merupakan implementasi dari tugas **proyek mini Warung** dengan variabel penting yang ditentukan.
 
 ## ✨ Fitur
-
-- **Menu Daftar Barang**: Menampilkan pilihan 5 barang yang tersedia.
-- **Detail Barang Lengkap**: Menampilkan nama, kode barang, stok, harga satuan, dan tanggal kadaluarsa.
-- **Validasi Input**: Menangani input salah agar pengguna tidak keluar dari program secara tidak sengaja.
-- **Looping Menu**: Program terus berjalan hingga pengguna memilih opsi keluar.
+- **Data Awal Otomatis**: Menampilkan daftar barang saat program dijalankan.  
+- **Menu Interaktif**: User bisa memilih barang untuk melihat detailnya.  
+- **Validasi Input**: Menangani input salah agar tidak error.  
+- **Looping Menu**: Program berjalan terus sampai user memilih keluar.  
 
 ## ⚙️ Teknologi yang Digunakan
 
@@ -40,28 +39,40 @@ Anda memerlukan compiler C++ seperti **G++** (tersedia di MinGW untuk Windows at
         ./WarungDigi
         ```
 
-## 📝 Contoh Penggunaan
+## 📝 Contoh Output
 
 Berikut adalah contoh output saat program dijalankan:
 
-```
-===== SELAMAT DATANG DI WARUNG DIGI =====
-Silakan pilih barang untuk melihat detail lengkap:
+Data Awal
+
+===== DATA AWAL WARUNG DIGI =====
+Nama Barang              Jumlah    Harga
+---------------------------------------------
+Indomie Goreng           50        Rp 3000.00
+Teh Botol Kotak          72        Rp 3500.00
+Silverqueen 62g          35        Rp 12500.00
+Chitato Sapi Panggang    40        Rp 11000.00
+Susu UHT Ultra Milk      60        Rp 5500.00
+=============================================
+
+Menu Interaktif
+
+===== MENU WARUNG DIGI =====
+1. Lihat detail barang
+0. Keluar
+Pilih menu: 1
+
+Daftar Barang:
 1. Indomie Goreng
 2. Teh Botol Kotak
 3. Silverqueen 62g
 4. Chitato Sapi Panggang
 5. Susu UHT Ultra Milk
---------------------------------------------
-0. Keluar dari program
-============================================
-Masukkan pilihan Anda (1-5 atau 0): 2
+Pilih barang (1-5): 2
 
----------- DETAIL LENGKAP ----------
-Nama Barang        : Teh Botol Kotak
-Kode Barang        : TBK-002
-Jumlah Stok        : 72 pcs
-Harga Satuan       : Rp 3500.00
-Tanggal Kadaluarsa : 20-01-2026
-------------------------------------
-```
+--- DETAIL BARANG ---
+Nama Barang : Teh Botol Kotak
+Jumlah      : 72 pcs
+Harga       : Rp 3500.00
+----------------------
+
