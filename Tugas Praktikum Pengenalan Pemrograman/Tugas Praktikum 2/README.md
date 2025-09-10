@@ -41,10 +41,9 @@ Anda memerlukan compiler C++ seperti **G++** (tersedia di MinGW untuk Windows at
 
 ## 📝 Contoh Output
 
-Berikut adalah contoh output saat program dijalankan:
+### Data Awal
 
-Data Awal
-
+```text
 ===== DATA AWAL WARUNG DIGI =====
 Nama Barang              Jumlah    Harga
 ---------------------------------------------
@@ -54,9 +53,11 @@ Silverqueen 62g          35        Rp 12500.00
 Chitato Sapi Panggang    40        Rp 11000.00
 Susu UHT Ultra Milk      60        Rp 5500.00
 =============================================
+```
 
-Menu Interaktif
+### Menu Interaktif
 
+```text
 ===== MENU WARUNG DIGI =====
 1. Lihat detail barang
 0. Keluar
@@ -75,4 +76,4 @@ Nama Barang : Teh Botol Kotak
 Jumlah      : 72 pcs
 Harga       : Rp 3500.00
 ----------------------
-
+```
