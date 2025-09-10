@@ -17,4 +17,8 @@ Struktur folder disusun berdasarkan urutan praktikum agar memudahkan navigasi da
 
 📌 Repository ini dibuat untuk kepentingan akademik dan dokumentasi pembelajaran.  
 
-👤 **Pemilik Repository:** Rizky Yoga Salasa
+## 👤 Identitas Pemilik
+- Nama  : Rizky Yoga Salasa  
+- NIM   : *[2510631170049]*  
+- Kelas : *[1A - Informatika]*  
+- GitHub: [Brain-Super-RY](https://github.com/Brain-Super-RY)
