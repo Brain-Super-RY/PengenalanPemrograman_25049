@@ -1,5 +1,3 @@
----
-
 # 🏪 Warung Digi – Sistem Kasir Warung Sederhana
 
 ## 📖 Deskripsi
