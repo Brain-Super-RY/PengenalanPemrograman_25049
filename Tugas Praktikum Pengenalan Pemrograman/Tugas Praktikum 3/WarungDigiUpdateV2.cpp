@@ -105,9 +105,9 @@ int main() {
                     double subtotal = harga[i] * keranjang[i]; // operator *
                     totalBelanja += subtotal;                  // operator +=
 
-                    // Diskon khusus barang (50%) jika subtotal > 550k
+                    // Diskon khusus barang (10%) jika subtotal > 550k
                     if (subtotal > 550000) {
-                        diskon += subtotal * 0.50;
+                        diskon += subtotal * 0.10;
                     }
 
                     // Cetak detail barang
