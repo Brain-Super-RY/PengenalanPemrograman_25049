@@ -1,4 +1,4 @@
-# 📖 Deskripsi
+# 🏪 Program Warung Digi (C++)
 
 **Warung Digi** adalah program simulasi kasir sederhana berbasis **C++** yang dibuat untuk tugas praktikum pemrograman.
 
