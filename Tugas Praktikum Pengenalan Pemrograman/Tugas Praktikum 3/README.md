@@ -1,150 +1,147 @@
-# 🏪 Warung Digi – Sistem Kasir Warung Sederhana
+# 📖 Deskripsi
 
-## 📖 Deskripsi
+**Warung Digi** adalah program simulasi kasir sederhana berbasis **C++** yang dibuat untuk tugas praktikum pemrograman.
 
-Warung Digi adalah program berbasis **C++** yang mensimulasikan sistem kasir di sebuah warung/minimarket sederhana.
-Dibuat untuk keperluan **tugas praktikum 3** (materi operator, array, perulangan, percabangan), program ini dirancang agar:
+Program ini memungkinkan pengguna untuk:
 
-* Memiliki data barang dengan stok dan harga.
-* Bisa menampilkan struk belanja profesional.
-* Menerapkan sistem diskon dan pajak sesuai kondisi nyata.
-* Mendukung beberapa metode pembayaran.
-* Data barang (stok & harga) bisa diupdate secara realtime.
+* Melihat daftar barang beserta stok dan harga.
+* Membeli barang dan otomatis mengurangi stok.
+* Menghitung **total belanja, diskon event, diskon tambahan, diskon besar, diskon member, dan PPN (11%)**.
+* Menampilkan **struk belanja profesional** seperti minimarket.
+* Mendukung berbagai **metode pembayaran** (tunai,  kartu member).
+* Menampilkan **stok barang terbaru secara realtime** setelah pembelian.
 
-Program ini menggunakan library **wajib**:
+Program ini juga sekaligus mendemonstrasikan penggunaan:
 
-* `<iostream>` untuk input & output.
-* `<string>` untuk manipulasi teks.
+* **Variabel dan tipe data**
+* **Operator (aritmatika, relasi, logika, dll.)**
+* **Percabangan (if/else, switch-case)**
+* **Perulangan (while, do-while, for)**
+* **Input/Output standar (cin, cout)**
 
 ---
 
 ## ⚡ Fitur Utama
 
-### 🎁 Manajemen Barang
+1. **Daftar Barang**
 
-* Menyediakan **15 barang** dengan harga yang bervariasi dan dapat berubah ubah.
-* Setiap barang punya **stok yang bervariasi dan berubah ubah**.
-* Stok dan harga bisa diupdate dari menu admin.
+   * Terdapat **15 barang** dengan stok bervariasi.
 
-### 🛒 Sistem Belanja
+2. **Diskon dan Pajak**
 
-* Pengguna bisa memilih barang berdasarkan **nomor** atau **nama barang**.
-* Setiap pembelian akan otomatis mengurangi stok barang.
-* Struk belanja ditampilkan setelah transaksi selesai.
+   * Diskon event otomatis **5% untuk semua barang**.
+   * Diskon tambahan:
 
-### 💸 Diskon & Pajak
+     * **10%** jika total belanja > Rp 100.000
+     * **10% per barang** jika subtotal barang > Rp 550.000
+     * **25% tambahan** jika total belanja > Rp 1.000.000
+     * **5% tambahan** untuk pemilik kartu member.
+   * PPN (Pajak Pertambahan Nilai) **11%** otomatis ditambahkan sesuai peraturan Indonesia.
 
-Diskon dihitung otomatis sesuai kondisi:
+3. **Keranjang Belanja**
 
-1. **Diskon Event**: 5% untuk semua barang.
-2. **Diskon Tambahan**: 10% jika total belanja > Rp100.000.
-3. **Diskon Barang**: 50% untuk barang dengan subtotal > Rp550.000.
-4. **Diskon Besar**: 25% jika total belanja > Rp1.000.000.
-5. **Diskon Member**: 5% tambahan jika menggunakan kartu member.
-6. **Pajak (PPN 11%)**: otomatis ditambahkan ke total bayar sesuai peraturan pajak di Indonesia.
+   * Barang yang dibeli akan tersimpan di keranjang.
+   * Stok barang otomatis berkurang.
 
-### 💳 Metode Pembayaran
+4. **Struk Belanja**
 
-Program mendukung berbagai opsi:
+   * Menampilkan detail: nama barang, jumlah, harga satuan, subtotal.
+   * Menghitung total belanja, diskon, pajak, total bayar, uang diterima, dan kembalian.
+   * Setelah struk tampil, program memberi **jeda sebentar** agar pengguna bisa membacanya sebelum kembali ke menu.
 
-* Tunai 💵
-* E-Wallet 📱
-* Kartu ATM 💳
-* Kartu Member 🎫
-* Transfer Bank 🏦
+5. **Metode Pembayaran**
 
-### 📊 Struk Profesional
+   * **Tunai** 💵
+   * **Kartu Member** 🎫
+   * Setiap metode menampilkan notifikasi otomatis sesuai pilihan pengguna.
 
-* Menampilkan nama barang, jumlah, harga satuan, subtotal, total diskon, PPN, dan total bayar.
+6. **Update Data Barang**
 
-### 🔧 Menu Admin
-
-Selain belanja, tersedia juga menu:
-
-* **Update Stok Barang**
-* **Update Harga Barang**
-  Sehingga data barang benar-benar dinamis.
+   * Data berubah realtime selama program berjalan.
 
 ---
 
-## 🛠️ Operator yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
-Program ini mengimplementasikan berbagai operator sesuai materi praktikum 3:
+* **Bahasa Pemrograman**: C++
+* **Library Wajib**:
 
-* **Aritmatika**: `+`, `-`, `*`, `/` → menghitung total, diskon, pajak.
-* **Relasi/Perbandingan**: `>`, `<`, `>=`, `<=`, `==` → pengecekan kondisi diskon.
-* **Logika**: `&&`, `||` → validasi input dan kombinasi syarat diskon.
-* **Bitwise (opsional contoh)**: digunakan untuk menandai flag diskon (misalnya `diskonAktif |= 1`).
-* **Assignment & shorthand**: `=`, `+=`, `-=` → update stok & harga.
+  * `<iostream>` → Input/Output standar
+  * `<string>` → Manipulasi teks
 
 ---
 
 ## 🚀 Cara Menjalankan
 
-### 1. Compile Program
+1. Pastikan sudah terinstall **g++** (GNU Compiler) atau IDE C++ (misalnya Code::Blocks, Dev C++, Visual Studio Code).
+2. Simpan file sebagai `warung_digi.cpp`.
+3. Kompilasi program:
 
-Gunakan compiler g++ (Linux/Mac/Windows via MinGW/WSL):
+   ```bash
+   g++ warung_digi.cpp -o warung_digi
+   ```
+4. Jalankan program:
 
-```bash
-g++ warung_digi.cpp -o warung_digi
-```
+   ```bash
+   ./warung_digi
+   ```
+5. Ikuti menu interaktif yang tersedia.
 
-### 2. Jalankan Program
+---
 
-```bash
-./warung_digi
-```
+## 📜 Alur Program
 
-### 3. Menu Utama
+1. **Menu Utama**
 
-* `1` → Lihat daftar barang
-* `2` → Beli barang
-* `3` → Cetak struk belanja
-* `4` → Update stok barang
-* `5` → Update harga barang
-* `0` → Keluar
+   * Lihat daftar barang
+   * Beli barang
+   * Cetak struk belanja
+   * Keluar
+
+2. **Proses Belanja**
+
+   * Pilih barang.
+   * Masukkan jumlah beli.
+   * Sistem cek stok.
+   * Barang masuk ke keranjang.
+
+3. **Struk Belanja**
+
+   * Hitung total, diskon, pajak.
+   * Pilih metode pembayaran.
+   * Input uang bayar.
+   * Tampilkan kembalian.
+   * Cetak struk profesional.
+   * **Program memberi jeda sejenak agar struk bisa dibaca.**
+   * Setelah itu, **program kembali ke menu utama dengan stok terbaru.**
 
 ---
 
 ## 📊 Contoh Output Struk
 
 ```
-=================== STRUK BELANJA WARUNG DIGI ===================
-Nama Barang               Jumlah   Harga        Subtotal
------------------------------------------------------------------
-Indomie Goreng            5        Rp 3500.50   Rp 17502.50
-Beras Premium 5kg         2        Rp 65000.00  Rp 130000.00
-Aqua Botol 600ml          10       Rp 5000.00   Rp 50000.00
------------------------------------------------------------------
-Total Belanja   : Rp 197502.50
-Diskon Event    : Rp 9875.12
-Diskon 10%      : Rp 19750.25
-Diskon Member   : Rp 9875.12
-Total Diskon    : Rp 394... 
-Setelah Diskon  : Rp 158002.01
-PPN 11%         : Rp 17380.22
-TOTAL BAYAR     : Rp 175382.23
-=================================================================
+======================================
+       STRUK BELANJA WARUNG DIGI      
+======================================
+Nama Barang         Qty     Subtotal
+--------------------------------------
+Indomie Goreng      3       Rp 10501.50
+Silverqueen 62g     2       Rp 31000.00
+Beras Premium 5kg   1       Rp 65000.00
+--------------------------------------
+Total Belanja           Rp 106501.50
+Total Diskon            Rp 14500.15
+PPN 11%                 Rp 10100.15
+TOTAL BAYAR             Rp 102101.50
 
-Pilih metode pembayaran:
-1. Tunai
-2. E-Wallet
-3. Kartu ATM
-4. Kartu Member
-5. Transfer Bank
+Metode Pembayaran: Tunai
+Uang Diterima           Rp 110000.00
+Kembalian               Rp 7898.50
+======================================
+         TERIMA KASIH :)              
+======================================
 
-Pilihan: 2
-Pembayaran melalui E-Wallet berhasil ✅
+(Struk akan ditampilkan beberapa detik sebelum kembali ke menu utama)
 ```
-
----
-
-## 👨‍💻 Catatan Developer
-
-
-* Fungsi tambahan seperti `toLowerManual`, `isDigitManual`, dan `cetakHarga` dibuat agar tidak bergantung pada library eksternal.
-* Semua data barang disimpan dalam array sehingga mudah diubah.
-* Sistem diskon & pajak dapat diubah sesuai kebutuhan praktikum atau simulasi bisnis.
-* Karena output tabel berbasis spasi, tampilan bisa sedikit berbeda antar terminal/device, namun tetap bisa dibaca rapi.
 
 ---
