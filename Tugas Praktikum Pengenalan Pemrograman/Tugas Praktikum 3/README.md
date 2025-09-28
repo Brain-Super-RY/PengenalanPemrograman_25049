@@ -1,4 +1,4 @@
-# 🏪 Program Warung Digi (C++)
+# 🏪 Warung Digi - Update Sistem V2 (C++)
 
 **Warung Digi** adalah program simulasi kasir sederhana berbasis **C++** yang dibuat untuk tugas praktikum pemrograman.
 

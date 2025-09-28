@@ -176,22 +176,25 @@ int main() {
             
             // Hitung diskon
             double totalDiskon = 0.0;
-            
-            // Diskon per item (jika subtotal > 550rb)
-            for (int i = 0; i < JUMLAH_BARANG; i++) {
-                if (keranjang[i] > 0) {
-                    double subtotal = harga[i] * keranjang[i];
-                    if (subtotal > 550000) {
-                        totalDiskon += subtotal * 0.10;
-                    }
-                }
-            }
+            string pesanDiskon = "";
             
             // Diskon global
-            totalDiskon += totalBelanja * 0.05; // Event 5%
-            if (totalBelanja > 100000) totalDiskon += totalBelanja * 0.10;
-            if (totalBelanja > 1000000) totalDiskon += totalBelanja * 0.25;
-            
+            if (totalBelanja >= 100000) {
+                totalDiskon = totalBelanja * 0.10; // Diskon 10%
+                pesanDiskon = "Mendapat Diskon 10%";
+            } else if (totalBelanja >= 50000) {
+                totalDiskon = totalBelanja * 0.05; // Diskon 5%
+                pesanDiskon = "Mendapat Diskon 5%";
+            } else {
+                pesanDiskon = "Tidak ada diskon";
+            }
+
+            cout << "Total Belanja : Rp " << totalBelanja << endl;
+            cout << "Keterangan    : " << pesanDiskon << endl;
+            if (totalDiskon > 0) {
+                 cout << "Total Diskon  : Rp " << totalDiskon << endl;
+            }
+
             // Member discount
             cout << "Punya kartu member? (1=Ya, 0=Tidak): ";
             int member;
@@ -208,10 +211,10 @@ int main() {
             double totalBayar = totalBelanja - totalDiskon + ppn;
             
             cout << "--------------------------------------------------" << endl;
-            cout << "Total Belanja : Rp " << totalBelanja << endl;
-            cout << "Total Diskon  : Rp " << totalDiskon << endl;
-            cout << "PPN (11%)     : Rp " << ppn << endl;
-            cout << "TOTAL BAYAR   : Rp " << totalBayar << endl;
+            cout << "Total Belanja : Rp " << totalBelanja << endl; // Total belanja sebelum diskon
+            cout << "Total Diskon  : Rp " << totalDiskon << endl; // Total diskon
+            cout << "PPN (11%)     : Rp " << ppn << endl; // PPN 11%
+            cout << "TOTAL BAYAR   : Rp " << totalBayar << endl; // Total bayar akhir
             
             // Simpan data pelanggan untuk perbandingan
             if (pelangganKe == 1) {
