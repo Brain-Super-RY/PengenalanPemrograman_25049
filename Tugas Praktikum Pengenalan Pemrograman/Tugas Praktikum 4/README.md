@@ -1,4 +1,4 @@
-# 🏪 Warung Digi - Update Sistem Kasir & Analisis Pelanggan V3 (C++)
+# 🏪 Warung Digi - Update Sistem V3 (C++)
 
 **Warung Digi** adalah program simulasi kasir canggih berbasis **C++** yang dirancang tidak hanya untuk mengelola transaksi, tetapi juga untuk melakukan analisis perbandingan data belanja pelanggan secara langsung.
 
