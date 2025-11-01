@@ -12,6 +12,7 @@ Struktur folder disusun berdasarkan urutan praktikum agar memudahkan navigasi da
 - `tugas-praktikum-5/` → Tugas Praktikum 5
 - `tugas-praktikum-7-8/` → Tugas Praktikum 7-8
 - `tugas-praktikum-9/` → Tugas Praktikum 9
+- `tugas-praktikum-10/` → Tugas Praktikum 10
 
 ## 🎯 Tujuan
 - Menyimpan dan mendokumentasikan hasil praktikum secara terstruktur  
