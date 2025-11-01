@@ -10,21 +10,24 @@ struct Pasien
     long long biayaPerawatan;
 };
 
-string formatRupiah(long long angka) {
+string formatRupiah(long long angka)
+{
     string hasil = "";
     string angkaStr = to_string(angka);
     int panjang = angkaStr.length();
     int hitung = 0;
-    
-    for (int i = panjang - 1; i >= 0; i--) {
-        if (hitung == 3) {
+
+    for (int i = panjang - 1; i >= 0; i--)
+    {
+        if (hitung == 3)
+        {
             hasil = "." + hasil;
             hitung = 0;
         }
         hasil = angkaStr[i] + hasil;
         hitung++;
     }
-    
+
     return "Rp " + hasil;
 }
 
