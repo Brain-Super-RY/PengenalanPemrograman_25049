@@ -14,6 +14,7 @@ Struktur folder disusun berdasarkan urutan praktikum agar memudahkan navigasi da
 - `tugas-praktikum-7-8/` → Tugas Praktikum 7-8
 - `tugas-praktikum-9/` → Tugas Praktikum 9
 - `tugas-praktikum-10/` → Tugas Praktikum 10
+- `tugas-praktikum-11/` → Tugas Praktikum 11
 
 ## 🎯 Tujuan
 
